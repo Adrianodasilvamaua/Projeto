@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>formulario</title>
+    <link rel="stylesheet" href="./styles/style.css">
+</head>
+
+<body>
+    <header class="cabecalho">
+        <nav class="cabecalho__menu">
+            <a class="cabecalho__menu__link" href="home.html">HOME</a>
+            <a class="cabecalho__menu__link"  href="sobremim.html">SOBRE MIM</a>
+            <a class="cabecalho__menu__link"  href="Habilidades.html">HABILIDADES</a>
+            <a class="cabecalho__menu__link"  href="formulario.html">CONTATO</a>
+            <a class="cabecalho__menu__link"  href="java.html">SOM</a>
+        </nav>
+    </header>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-image: url('fotos/imagem fundo.jpg');
+
+        }
+
+        .container {
+            max-width: 500px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: rgb(34, 23, 192);
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 10.1);
+            border-radius: 8px;
+            margin-top: 40px;
+            margin-bottom: 40px;
+        }
+
+        .container h2 {
+            text-align: center;
+        }
+
+        .form-group {
+            margin-bottom: 20px;
+        }
+
+        .form-group label {
+            display: block;
+            font-weight: bold;
+        }
+
+        .form-group input,
+        .form-group textarea {
+            width: 100%;
+            padding: 5px;
+            font-size: 16px;
+            border: 1px solid black;
+            border-radius: 4px;
+        }
+
+        .form-group textarea {
+            resize: vertical;
+            min-height: 100px;
+        }
+
+        .form-group input[type="submit"] {
+            background-color: rgb(166, 166, 219);
+            color: black;
+            border: none;
+            cursor: pointer;
+            padding: 10px 20px;
+            border-radius: 4px;
+        }
+
+        .form-group input[type="submit"]:hover {
+            background-color: blue;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>Formulário de Cadastro</h2>
+        <form action="#" method="post">
+            <div class="form-group">
+                <label for="nome">Nome:</label>
+                <input type="text" id="nome" name="nome" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+                <label for="telefone">Telefone:</label>
+                <input type="tel" id="telefone" name="telefone" required>
+            </div>
+            <div class="form-group">
+                <label for="mensagem">Mensagem:</label>
+                <textarea id="mensagem" name="mensagem" required></textarea>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Enviar">
+            </div>
+        </form>
+    </div>
+
+    <footer class="rodape">
+        <p>Desenvolvido pelo Adriano.</p>
+    </footer>
+</body>
+</html>
